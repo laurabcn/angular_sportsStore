@@ -1,0 +1,15 @@
+{
+  "name": "sportsstore",
+  "version": "1.0.0",
+  "description": "Angular pro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Laura Riera",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-route": "^1.4.7"
+  }
+}
