@@ -11,12 +11,6 @@
         angular.module("sportsStore", ["customFilters", "cart",  "ngRoute"])
                 .config(function ($routeProvider){
                     $routeProvider
-                            .when("/complete", {
-                                templateUrl: "views/thankYou.html"
-                            })
-                            .when("/placeorder", {
-                                templateUrl: "views/placeOrder.html"
-                            })
                             .when("/checkout", {
                                 templateUrl: "views/checkoutSummary.html"
                             })
@@ -24,16 +18,16 @@
                                 templateUrl: "views/productList.html"
                             })
                             .otherwise({
-                                redirect: "/products"
+                                templateUrl: "views/productList.html"
                             })
                 });
 
     </script>
-    <script src="components/products/controllers/products.js"></script>
+    <script src="components/products/controllers/sportsStoreController.js"></script>
     <script src="components/products/filters.js"></script>
     <script src="components/products/controllers/productListControllers.js"></script>
     <script src="components/cart/service.js"></script>
-    <script src="components/checkout/checkoutControllers.js"
+    <script src="components/checkout/checkoutControllers.js"></script>
 </head>
 <body ng-controller="sportsStoreCtrl as spsStore">
 <div class="navbar navbar-inverse">

@@ -6,8 +6,11 @@
 </style>
 
 <div class="navbar-right">
-    <div class="navbar-text">
+    <div class="navbar-text" ng-show="total() > 0">
         <b>Your cart:</b>{{ itemCount() }} item(s), {{ total() | currency }}
+    </div>
+    <div class="navbar-text" ng-hide="total() > 0">
+        <b>Your cart</b> It's empty
     </div>
     <a href="#/checkout" class="btn btn-default navbar-btn">Checkout</a>
 </div>
